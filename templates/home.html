@@ -1,0 +1,15 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+  <div class="center jumbotron text-center">
+	<h1>Welcome to the Flask Articles App</h1>
+	<p>
+	This is the home page for the Flask Articles
+	 application.
+	</p>
+	{% if session.logged_in == NULL %}
+	 <a href="/register" class="btn btn-primary btn-lg">Register</a>
+	 <a href="/login" class="btn btn-success btn-lg">Login</a>
+	{% endif %}
+  </div>
+{% endblock %}
